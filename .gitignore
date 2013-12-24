@@ -1,0 +1,7 @@
+*.sh
+*.cmd
+*.log
+src/*
+bin/*
+*.properties
+players/*
