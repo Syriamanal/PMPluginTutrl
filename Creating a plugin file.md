@@ -13,6 +13,7 @@ apiversion=10,11
 version=0.0.0
 class=IAmTheClassName
 description=optional
+*/
 
 class IAmTheClassName implements Plugin{
   public function __construct(ServerAPI $api, $server=false){
@@ -25,7 +26,6 @@ class IAmTheClassName implements Plugin{
     
   }
 }
-*/
 
 Now, the script above is the basic structure a plugin should have to work properly, be loaded properly and being shown that it is loaded on the console properly. Whatever you do you must keep the above because:
 * The /* */ content is required by the API to load the correct class
