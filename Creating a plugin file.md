@@ -5,6 +5,7 @@ Now very possibly you know how a user imports a plugin: drag it to the /plugins 
 Now let's initialize a PHP file:
 
 ```
+<?php
 /*
 __PocketMine Plugin__
 name=TutorialExample
@@ -26,6 +27,7 @@ class IAmTheClassName implements Plugin{
     
   }
 }
+?>
 ```
 
 Now, the script above is the basic structure a plugin should have to work properly, be loaded properly and being shown that it is loaded on the console properly. Whatever you do you must keep the above because:
