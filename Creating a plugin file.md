@@ -27,7 +27,6 @@ class IAmTheClassName implements Plugin{
     
   }
 }
-?>
 ```
 
 Now, the script above is the basic structure a plugin should have to work properly, be loaded properly and being shown that it is loaded on the console properly. Whatever you do you must keep the above because:
@@ -39,3 +38,5 @@ Now, the script above is the basic structure a plugin should have to work proper
 * class must be the name of the class to be loaded. During loading pocketmine would create a new instance of it with the server API provided in the arguments (as type ServerAPI)
 
 Now, for what to do to let the plugin do something, read the next chapter.
+
+P.S. For some devices, adding ?> in the end of the script would cause them not to work according to @wies. And it is not necessary.
