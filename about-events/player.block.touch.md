@@ -1,8 +1,17 @@
 # player.block.touch
 ## Type: handled
 ===
-Redirection to ModPE hooks:
-```
+##Explanation
+A player taps or breaks a block.
+
+##Data supplied:
+* `$data["type"]`: Type of touching (type string, either "place" or "break")
+* `$data["item"]`: The item used to tap the block (type Item)
+* `$data["player"]`: The player who touches the block (type Player)
+* `$data["target"]`: The target block tapped (type Block, with x, y, z, level, id and metadata fields correct)
+
+##Redirection to ModPE hooks:
+```php
 private $preventDefault=false;
 public functio init(){
   ServerAPI::request()->addHandler("player.block.touch",array($this,"eventRedirector"));
