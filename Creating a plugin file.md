@@ -4,7 +4,7 @@ Now very possibly you know how a user imports a plugin: drag it to the /plugins 
 
 Now let's initialize a PHP file:
 
-```
+```php
 <?php
 /*
 __PocketMine Plugin__
