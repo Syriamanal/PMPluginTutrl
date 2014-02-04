@@ -5,12 +5,12 @@ This event is called whenever an entity's health has been changed.
 There are several causes for this event to be handled.
 * hit by a player
 * natural causes
-** cactus
-** suffocation
-** fall
-** lava
-** water
-** and more
+* - cactus
+* - suffocation
+* - fall
+* - lava
+* - water
+* - and more
 * eating
 * healed by a plugin
 * healed by peaceful mode
@@ -22,9 +22,9 @@ If it is not a Player imstance, it is a mob hurt. You can get that mob directly 
 
 ##Cause
 * Hurt by a player:
-** EID of the player
+* - EID of the player
 * Eating:
-** "eating" is the cause. No further information supplied.
+* - "eating" is the cause. No further information supplied.
 
 
 ##Example:
