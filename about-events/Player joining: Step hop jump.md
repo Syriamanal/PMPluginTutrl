@@ -18,7 +18,7 @@ Step-hop-jump ot player joining
 5. If above is passed, event "player.join" is handled.
 * $data instanceof Player
 * $data->username is set
-* CAUTION $data->entoty not set
+* CAUTION $data->entity not set
 
 6. If all above is passed, the player's client will receive the signal of joinable. Then the classical window of Generating World is displayed.
 
