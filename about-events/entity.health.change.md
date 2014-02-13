@@ -18,7 +18,7 @@ There are several causes for this event to be handled.
 ##Finding the entity
 There are multiple information supplied in the $data, but if you want to test if it is a player whose health is changed, use `$this->api->player->getByEID($data["eid"])`. If it is not a player, you will receive `false`. Again, keep in mind to check false with the identical operator (`===` or `!==`). Or, a better means to check is to use the `instanceof` operator.
 
-If it is not a Player imstance, it is a mob hurt. You can get that mob directly from `$data["entity"]`.
+If it is not a Player instance, it is a mob hurt. You can get that mob directly from `$data["entity"]`.
 
 ##Cause
 * Hurt by a player:
