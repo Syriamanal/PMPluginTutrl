@@ -22,6 +22,8 @@ public function eventRedirector($data,$event){
       $data["target"]->x,
       $data["target"]->y,
       $data["target"]->z,
+      $data["item"],
+      $data["player"]->entity->level->getBlock($data["target"]),
       $data["player"]);
   else $this->useItem(
     $data["target"]->x,
@@ -34,8 +36,17 @@ public function eventRedirector($data,$event){
 }
 function useItem($x,$y,$z,Item $item,Block $block,Player $player){
   $itemId=$item->getID();
+  $itemDamage=$item->getMetadata();
+  $itemCount=$item->count;
   $blockId=$block->getID();
   $level=$player->entity->level;
+}
+function destroyBlock($x, $y, $z, Item $item, Block $block, Player $player){
+  $level=$player->entity->level;
+  $itemId=$item->getID();
+  $blockId=$block->getID();
+  $itemDamage=$item->getMetadata();
+  $itemCount=$item->count;
 }
 function preventDefault(){
   $this->preventDefault=true;
