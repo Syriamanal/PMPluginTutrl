@@ -10,9 +10,9 @@ Reminder: This folder of markdowns assume that you have a field in your plugin c
 public function eventHandler($data, $evt){
     switch ($evt){
         case "event.name":
-            break;
+            break; // Must have break!
         case "another.event.name":
-            break;
+            break; // Must have break!
     }
 }
 ```
